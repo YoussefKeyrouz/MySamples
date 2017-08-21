@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.y2thez.samples.backgroundservices.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Start Service"
+            android:onClick="startService"
+            />
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Start Foreground"
+            android:onClick="startForeground"
+            />
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Start Job"
+            android:onClick="startJob"
+            />
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="#ff0000"
+            android:textColor="#ffffff"
+            android:onClick="stopCounting"
+            android:text="Stop"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
